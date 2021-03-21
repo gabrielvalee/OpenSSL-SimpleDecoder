@@ -97,7 +97,7 @@ def modificaPalavra(listPalavras, numMod):
 			elif numMod == 12: #Replace s with 5
 				listaMod = [palavra.replace("s","5") for palavra in listPalavras]
             
-      elif numMod == 13: #Replace i with 1
+      			elif numMod == 13: #Replace i with 1
 				listaMod = [palavra.replace("i","1") for palavra in listPalavras]
 			
 			return listaMod
