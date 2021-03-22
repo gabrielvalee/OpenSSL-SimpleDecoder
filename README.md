@@ -3,11 +3,11 @@
 This is a OpenSSL decoder developed in python for the class of "information security audit" in the "Federal University of Uberlandia".
 
 What was requested in the project:
- Someone encrypted 15 files using a strong encryptor(aes/256 bits), the password may contain words(upper and lowercase), numbers, exclamation point(!) and at sign(@). You know whoever encrypted the files likes "La casa de papel" a drama television series. You must find the passwords for the files.
+ Someone encrypted 15 files using a strong encryptor (aes/256 bits), the password may contain words (upper and lowercase), numbers, exclamation point(!) and at sign(@). You know whoever encrypted the files likes "La casa de papel" a drama television series. You must find the passwords for the files.
 
-For decode the files I created a .txt file with a lot of key words and names about "La casa de papel", this file is: **"base-dict.txt"**
-A file was also created with the names of the files i wanted to decode, this file is **"nome-arq.txt"**
-Finally the code was written in python, deveoped to work on linux. The file is **"Decifrador.py"**
+In order to decode the files I created a .txt file named **"base-dict.txt"** that contains a lot of key words and names about "La casa de papel".
+A file named **"nome-arq.txt"** was created to include the names of the files that would be decoded.
+Finally the code was written in python and deveoped to work on linux. The final file is **"Decifrador.py"**
 
 ```python
 import subprocess
@@ -107,9 +107,9 @@ if __name__ == "__main__":
     main()
 ```
 
-The code will do:
+The code will:
  1. Get the files and words
  2. Try all words for a file and modify then to try again until find the correct one or until try every word.
  3. Change to the next file and try again.
 
-To decode the files is used `openssl` with the arguments `enc -d -aes-256-cbc -pbkdf2 -salt -in file.enc -out decoded.txt -pass pass:Wordtotry` with `file.enc` being the file that will be decoded, `decoded.txt` being the file decoded and `Wordtotry` being the password.
+`Openssl` is used to decode the files with the following arguments `enc -d -aes-256-cbc -pbkdf2 -salt -in file.enc -out decoded.txt -pass pass:Wordtotry` with `file.enc` being the file that will be decoded, `decoded.txt` being the file decoded and `Wordtotry` being the password.
