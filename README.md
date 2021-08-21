@@ -1,6 +1,6 @@
 # Simple OpenSSL decoder
 
-This is a OpenSSL decoder developed in python for the class of "information security audit" in the "Federal University of Uberlandia".
+This is an OpenSSL decoder developed in python for the class of "information security audit" in the "Federal University of Uberlandia".
 
 What was requested in the project:
  Someone encrypted 15 files using a strong encryptor (aes/256 bits), the password may contain words (upper and lowercase), numbers, exclamation point(!) and at sign(@). You know whoever encrypted the files likes "La casa de papel" a drama television series. You must find the passwords for the files.
